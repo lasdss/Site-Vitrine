@@ -1,0 +1,32 @@
+#background-video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+
+#logo, #btnVideo {
+	text-align: center;
+}
+ #btnVideo{
+	color: white;
+	font-family: Trebuchet MS;
+}
+#logo {
+	font-size: 6rem;
+	margin-top: 30vh; 
+}
+
+#btnVideo{
+	font-size: 1.5rem;
+	background: 0;
+	border: 0;
+	margin-left: 50%;
+	transform: translateX(-50%)
+}

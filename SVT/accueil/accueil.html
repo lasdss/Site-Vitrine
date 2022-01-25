@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr>
+
+ <head>
+	  <meta charset="utf-8"/>
+	  <link rel="stylesheet" href="styles/accueil.css"/>
+	  <title>videos</title>
+ </head>
+ <body>
+	<video id="background-video" autoplay loop muted> 
+			<source src="media/moto.mp4" type="video/mp4"/>
+			<source src="media/moto.webm" type="video/webm"/> 
+	</video>
+	<div id="logo">
+		<a href="../site/index.html"><img src="images/logo.png" alt="Logo de AD2R"/></a>
+	</div>
+		<button id="btnVideo" onclick="playAndPause()">Pause II</button>
+	</div>
+			
+				
+				
+	  <script>
+	  var video = document.getElementById("background-video");
+		var btn = document.getElementById("btnVideo");
+		function playAndPause () {
+		if (video.paused) {
+		video.play();
+		btn.innerHTML = "Pause II";
+		} else {
+		video.pause();
+		btn.innerHTML = "Play ▶";
+		}
+	}
+		
+	  </script>
+ </body>
+</html>
